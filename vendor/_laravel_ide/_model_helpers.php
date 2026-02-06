@@ -5,29 +5,9 @@ namespace App\Models {
     /**
      * App\Models\Boat
      *
-     * @property \Illuminate\Support\Carbon|null $updated_at
-     * @property \Illuminate\Support\Carbon|null $created_at
-     * @property mixed $uploader_id
-     * @property mixed $status
-     * @property string $owner_mobile
-     * @property string $owner_name
-     * @property mixed $capacity
-     * @property string|null $boat_image
-     * @property string $boat_dept_id
-     * @property int $id
      * @property-read \App\Models\User $uploader
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\DailyTrip> $dailyTrips
      * @property-read int|null $dailyTrips_count
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereBoatDeptId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereBoatImage($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereCapacity($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereOwnerName($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereOwnerMobile($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereStatus($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereUploaderId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat newModelQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat newQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Boat>|Boat query()
@@ -342,27 +322,9 @@ namespace App\Models {
     /**
      * App\Models\DailyTrip
      *
-     * @property \Illuminate\Support\Carbon|null $updated_at
-     * @property \Illuminate\Support\Carbon|null $created_at
-     * @property string|null $entry_point
-     * @property \Illuminate\Support\Carbon $verified_at
-     * @property \Illuminate\Support\Carbon $trip_date
-     * @property mixed $verifier_id
-     * @property mixed $boat_id
-     * @property mixed $raft_driver_id
-     * @property int $id
      * @property-read \App\Models\RaftDriver $driver
      * @property-read \App\Models\Boat $boat
      * @property-read \App\Models\User $verifier
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereRaftDriverId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereBoatId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereVerifierId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereTripDate($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereVerifiedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereEntryPoint($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip newModelQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip newQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<DailyTrip>|DailyTrip query()
@@ -676,31 +638,9 @@ namespace App\Models {
     /**
      * App\Models\RaftDriver
      *
-     * @property \Illuminate\Support\Carbon|null $updated_at
-     * @property \Illuminate\Support\Carbon|null $created_at
-     * @property mixed $uploader_id
-     * @property mixed $status
-     * @property string|null $company_name
-     * @property string|null $profile_image
-     * @property string $mobile
-     * @property string $aadhaar
-     * @property string $name
-     * @property string $dept_id
-     * @property int $id
      * @property-read \App\Models\User $uploader
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\DailyTrip> $dailyTrips
      * @property-read int|null $dailyTrips_count
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereDeptId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereName($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereAadhaar($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereMobile($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereProfileImage($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereCompanyName($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereStatus($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereUploaderId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver newModelQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver newQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<RaftDriver>|RaftDriver query()
@@ -1015,18 +955,8 @@ namespace App\Models {
     /**
      * App\Models\Role
      *
-     * @property \Illuminate\Support\Carbon|null $updated_at
-     * @property \Illuminate\Support\Carbon|null $created_at
-     * @property string $slug
-     * @property string $name
-     * @property int $id
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\User> $users
      * @property-read int|null $users_count
-     * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role whereId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role whereName($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role whereSlug($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role whereCreatedAt($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role newModelQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role newQuery()
      * @method static \Illuminate\Database\Eloquent\Builder<Role>|Role query()
@@ -1342,15 +1272,9 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property string|null $profile_photo_path
-     * @property mixed $current_team_id
      * @property string|null $remember_token
-     * @property string|null $two_factor_confirmed_at
-     * @property string|null $two_factor_recovery_codes
-     * @property string|null $two_factor_secret
      * @property string $password
      * @property \Illuminate\Support\Carbon|null $email_verified_at
-     * @property mixed $role_id
      * @property string $email
      * @property string $name
      * @property int $id
@@ -1363,15 +1287,9 @@ namespace App\Models {
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereId($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereName($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereEmail($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereRoleId($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereEmailVerifiedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User wherePassword($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereTwoFactorSecret($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereTwoFactorRecoveryCodes($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereTwoFactorConfirmedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereRememberToken($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereCurrentTeamId($value)
-     * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereProfilePhotoPath($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereCreatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User whereUpdatedAt($value)
      * @method static \Illuminate\Database\Eloquent\Builder<User>|User newModelQuery()
